@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato',san-sans-serif;
+  color: #313538;
+}
+
+/*-- nav scrolling offset --*/
+.offset:before {
+  height: 62px;
+  margin-top: -62px;
+  content: "";
+  display: block;
+}
+
+/*-- extra bootstrap column padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*======================== navigation ==============================*/
+.navbar {
+  padding: .6rem 1rem;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  background-color: rgba(53,53,53,.9)!important;
+}
+.navbar-brand h3 {
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #236a8c;
+}
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+
+/*======================== landing page ==============================*/
+.home-inner {
+  background-image: url('img/spec1.jpg');
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.caption h3 {
+  color: white;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.btn {
+  border-width: medium;
+  padding: 0.5rem 1.1rem;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+
+
+/*======================== about section ==============================*/
+.jumbotron {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 3rem 0 3rem;
+}
+.narrow {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #00b3ff;
+  margin: 0 auto 2rem;
+}
+.about svg.svg-inline--fa {
+  color: #00b3ff;
+  margin: 1rem;
+}
+.about h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.about p {
+  font-size: 1.1rem;
+}
+
+
+
+
+/*======================== portfolio section ==============================*/
+.padding {
+  padding: 2rem 0;
+}
+.no-padding [class*=col-] {
+  padding: 0;
+}
+img.example-image {
+  max-width: 100%;
+}
+.portfolio-item img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.portfolio-item img {
+  transition: transform .4s ease;
+}
+.portfolio-item {
+  overflow: hidden;
+}
+
+
+/*======================== contact section ==============================*/
+
+.footer .row {
+  background-color: rgba(23, 23, 23, 0.8);
+  padding: 1rem 2rem 3rem;
+  color: #fff;
+}
+.footer h3 {
+  margin: 1.5rem 0;
+}
+.location {
+  padding-top: 100px;
+}
+
+/*======================== contact form ==============================*/
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background: #fafafa;
+  border: .15rem solid #666b71;
+  color: black!important;
+}
+.form-control:focus {
+  background: #fcfca8;
+  border: .15rem solid #666b71;
+}
+.form-group input:placeholder,
+.form-group textarea:placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+}
+hr.socket {
+  width: 100%;
+  border-top: 1px solid #fafafa;
+}
+
+/*======================== media queries ==============================*/
+
+/* medium (md) devices (tablets, 768px and under) */
+
+@media (max-width: 768px) {
+  .caption {
+    top: 35%;
+  }
+  .caption h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
